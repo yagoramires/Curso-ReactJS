@@ -7,14 +7,27 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
-.red-title {
+/* .red-title {
   color: red;
   background-color: goldenrod;
-}
+} */
 
 .title {
-  color: aliceblue;
+  font-size: 3rem;
+  color: #fff;
   background-color: black;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.car-cards {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
