@@ -8,3 +8,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  background: linear-gradient(180deg,
+      rgb(0, 17, 96) 0%,
+      rgb(0, 6, 32) 100%);
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: .5rem 2rem;
+  text-transform: uppercase;
+
+  border: none;
+  color: #fff;
+  border-radius: .25rem;
+  background-color: #002EFF;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+
+  transition: background-color 150ms;
+}
+
+button:hover {
+  background-color: #001780;
+}
