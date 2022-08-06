@@ -66,7 +66,7 @@ const Game = ({
         </form>
 
         <div className={styles.wrongLettersContainer}>
-          <p>Letras já utilizadas:</p>
+          <p>Tentativas erradas: </p>
           {wrongLetters.map((letter, i) => (
             <span key={i}>{letter.toUpperCase()}, </span>
           ))}

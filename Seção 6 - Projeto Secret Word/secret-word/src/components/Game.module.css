@@ -94,7 +94,18 @@
 
 .wrongLettersContainer {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+}
+
+.wrongLettersContainer p {
+    display: block;
+    margin-right: 10px;
+}
+
+.wrongLettersContainer span {
+    font-weight: 600;
+    color: gold;
+    letter-spacing: 2px;
 }
