@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
+import Search from './SearchForm';
 import './Header.css';
 
 const Header = () => {
@@ -9,9 +10,18 @@ const Header = () => {
       <h1>REACT ROUTER</h1>
 
       <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>Sobre</Link>
+        <NavLink to='/'>Home</NavLink>
+        {/* padrao quando a barra esta ativa  */}
+        <NavLink
+          to='/about'
+          className={({ isActive }) => (isActive ? 'ativo' : 'nao-ativo')}
+        >
+          Sobre
+        </NavLink>
+        {/* propriedade isActive do NavLink que me permite definir a classe  */}
       </nav>
+
+      <Search />
     </header>
   );
 };

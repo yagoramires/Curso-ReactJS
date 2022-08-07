@@ -58,19 +58,19 @@ export const useFetch = (url) => {
     fetchData();
   }, [url, callFetch]);
 
-  useEffect(() => {
-    const httpReq = async () => {
-      if (method === 'POST') {
-        let fetchOptions = [url, config];
+  // useEffect(() => {
+  //   const httpReq = async () => {
+  //     if (method === 'POST') {
+  //       let fetchOptions = [url, config];
 
-        const res = await fetch(...fetchOptions);
-        const json = await res.json();
+  //       const res = await fetch(...fetchOptions);
+  //       const json = await res.json();
 
-        setCallFetch(json);
-      }
-    };
-    httpReq();
-  }, [config, method, url]);
+  //       setCallFetch(json);
+  //     }
+  //   };
+  //   httpReq();
+  // }, [config, method, url]);
 
   useEffect(() => {
     const httpReq = async () => {

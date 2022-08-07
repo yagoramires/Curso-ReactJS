@@ -1,24 +1,24 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Camisa",
-      "price": 59.9
-    },
-    {
       "id": 2,
       "name": "Calça vermelha",
       "price": 90
     },
     {
-      "name": "Yeezy",
-      "price": "1300",
+      "name": "Adidas Yeezy Bone",
+      "price": 1600,
+      "id": 3
+    },
+    {
+      "name": "Adidas Yeezy Onyx",
+      "price": 1300,
       "id": 4
     },
     {
       "name": "Air Jordan 1 Heritage",
-      "price": "1199,00",
-      "id": 5
+      "price": 1299,
+      "id": 7
     }
   ]
 }

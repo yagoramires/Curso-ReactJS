@@ -1,0 +1,95 @@
+.products-container {
+    max-width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+    text-align: left;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+    padding: 0;
+}
+
+.list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    background-color: rgb(246, 246, 246);
+    border-radius: .25rem;
+    padding: 1rem;
+}
+
+.list-item a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.list-item a:hover {
+    color: blue;
+}
+
+
+.product-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.deleteBtn {
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+    color: red;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.label {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.form-input-add {
+    width: 100%;
+    border: none;
+    background-color: rgb(246, 246, 246);
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+.form-submit {
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: .25rem;
+}

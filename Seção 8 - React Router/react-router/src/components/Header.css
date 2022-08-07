@@ -18,9 +18,19 @@ nav a {
     color: black;
     padding: 0 1rem;
 
-    transition: all .5s;
+    transition: all .3s;
 }
 
 nav a:hover {
     color: rgb(200, 200, 200);
+}
+
+.active,
+.ativo {
+    border-bottom: 4px solid red;
+    color: red;
+}
+
+.nao-ativo {
+    color: blue;
 }
