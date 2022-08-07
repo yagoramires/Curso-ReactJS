@@ -1,0 +1,26 @@
+Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    padding: 0 1rem;
+
+    transition: all .5s;
+}
+
+nav a:hover {
+    color: rgb(200, 200, 200);
+}
