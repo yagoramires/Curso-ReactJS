@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": 2,
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "name": "Yeezy",
+      "price": "1300",
+      "id": 4
+    },
+    {
+      "name": "Air Jordan 1 Heritage",
+      "price": "1199,00",
+      "id": 5
+    },
+    {
+      "name": "YAGO RAMIRES",
+      "price": "1300",
+      "id": 6
+    },
+    {
+      "name": "name",
+      "price": "123",
+      "id": 7
+    },
+    {
+      "name": "Liminha",
+      "price": "123",
+      "id": 8
+    },
+    {
+      "name": "Liminha",
+      "price": "123",
+      "id": 9
+    }
+  ]
+}
