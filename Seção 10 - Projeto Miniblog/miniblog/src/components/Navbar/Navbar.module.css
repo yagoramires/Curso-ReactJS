@@ -4,17 +4,19 @@
   background-color: #000;
   padding: 1rem 0;
   box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.4);
+
 }
 
-.headerContainer > div {
+.headerContainer>div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: calc(1120px + 4rem);
   padding: 0 2rem;
+  margin: 0 auto;
 }
 
-.headerContainer div > a {
+.headerContainer div>a {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 500;
@@ -25,18 +27,20 @@
   align-items: center;
   font-weight: 400;
 }
-.headerContainer div > a > span > span {
+
+.headerContainer div>a>span>span {
   font-weight: 800;
 }
 
-.headerContainer > div > ul {
+.headerContainer>div>ul {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
   list-style-type: none;
+  min-height: 100%;
 }
 
-.headerContainer > div > ul > li > a {
+.headerContainer>div>ul>li>a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -45,12 +49,29 @@
   letter-spacing: 1px;
 }
 
-.headerContainer > div > nav > a:hover {
+.headerContainer>div>ul>li>a:hover {
   font-weight: 600;
   background-color: #fff;
   color: #000;
 }
+
 .active {
   background-color: #fff;
   color: #000 !important;
+}
+
+
+@media (max-width: 768px) {
+
+  .headerContainer>div {
+    padding: 0 .5rem;
+  }
+
+  .headerContainer>div>ul>li>a {
+    font-size: .6rem;
+  }
+
+  .headerContainer>div>ul {
+    column-gap: 0.25rem;
+  }
 }

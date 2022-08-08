@@ -84,10 +84,11 @@ const Navbar = () => {
           )}
           {user && (
             <li>
-              <button onClick={logout} className='' >Sair</button>
+              <button onClick={logout} className='btn-logout'>
+                Sair
+              </button>
             </li>
           )}
-
         </ul>
       </div>
     </header>

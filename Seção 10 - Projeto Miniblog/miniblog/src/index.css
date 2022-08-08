@@ -16,6 +16,12 @@ textarea::placeholder {
   color: #aaa;
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+  min-height: 5rem;
+}
+
 a {
   text-decoration: none;
 
@@ -54,7 +60,7 @@ textarea {
 }
 
 .btn {
-  background: #1a8918;
+  background: rgb(27, 27, 27);
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -81,7 +87,7 @@ textarea {
 }
 
 .btn:hover {
-  background: #0f730c;
+  background: #AAA;
 }
 
 .btn.btn-outline:hover {
@@ -90,6 +96,24 @@ textarea {
 
 .btn.btn-danger:hover {
   background: #dc3545;
+}
+
+.btn-logout {
+  padding: 0.4rem;
+
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+
+}
+
+.btn-logout:hover {
+  padding: 0.4rem;
+
+  color: #000;
+  border: 1px solid #fff;
+  background-color: #fff;
+
 }
 
 button[disabled] {
@@ -107,4 +131,13 @@ button[disabled] {
   border: 1px solid #f5c6cb;
   padding: 0.3rem;
   border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .btn-logout {
+
+    padding: 0.4rem;
+
+    font-size: .6rem;
+  }
 }

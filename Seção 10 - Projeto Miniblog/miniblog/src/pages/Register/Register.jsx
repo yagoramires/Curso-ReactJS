@@ -92,12 +92,12 @@ const Register = () => {
           />
         </label>
         {!loading && (
-          <button type='submit' value='Registrar' className='btn btn-dark'>
+          <button type='submit' className='btn btn-dark'>
             Cadastrar
           </button>
         )}
         {loading && (
-          <button type='submit' value='Registrar' className='btn' disabled> 
+          <button type='submit' className='btn' disabled>
             Aguarde ...
           </button>
         )}
