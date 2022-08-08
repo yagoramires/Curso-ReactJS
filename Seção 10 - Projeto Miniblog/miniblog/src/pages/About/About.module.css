@@ -1,0 +1,21 @@
+.aboutContainer {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+  min-height: 65vh;
+  gap: 2rem;
+}
+
+.aboutContainer p {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.about a {
+  display: block;
+  margin-top: 15px;
+}

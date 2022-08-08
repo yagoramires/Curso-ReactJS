@@ -1,8 +1,14 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
+
+import { useAuth } from '../../hooks/useAuth';
+import { useAuthValue } from '../../context/AuthContext';
+
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
+  const { user } = useAuthValue();
+  // const { auth } = useAuth();
+
   return (
     <header className={styles.headerContainer}>
       <div>
@@ -11,20 +17,73 @@ const Navbar = () => {
             Mini<span>blog</span>
           </span>
         </NavLink>
-        <nav>
-          <NavLink
-            to='/'
-            className={({ isActive }) => (isActive ? `${styles.active}` : '')}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to='/about'
-            className={({ isActive }) => (isActive ? `${styles.active}` : '')}
-          >
-            Sobre
-          </NavLink>
-        </nav>
+        <ul>
+          <li>
+            <NavLink
+              to='/'
+              className={({ isActive }) => (isActive ? `${styles.active}` : '')}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/about'
+              className={({ isActive }) => (isActive ? `${styles.active}` : '')}
+            >
+              Sobre
+            </NavLink>
+          </li>
+          {!user && (
+            <>
+              <li>
+                <NavLink
+                  to='/login'
+                  className={({ isActive }) =>
+                    isActive ? `${styles.active}` : ''
+                  }
+                >
+                  Entrar
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/register'
+                  className={({ isActive }) =>
+                    isActive ? `${styles.active}` : ''
+                  }
+                >
+                  Registrar
+                </NavLink>
+              </li>
+            </>
+          )}
+          {user && (
+            <>
+              <li>
+                <NavLink
+                  to='/posts/create'
+                  className={({ isActive }) =>
+                    isActive ? `${styles.active}` : ''
+                  }
+                >
+                  Novo post
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/dashboard'
+                  className={({ isActive }) =>
+                    isActive ? `${styles.active}` : ''
+                  }
+                >
+                  Dashboard
+                </NavLink>
+              </li>
+            </>
+          )}
+
+        </ul>
       </div>
     </header>
   );

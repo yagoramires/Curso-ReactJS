@@ -1,4 +1,5 @@
 .footerContainer {
+  height: 8vh;
   width: 100%;
   display: flex;
   flex-direction: column;
