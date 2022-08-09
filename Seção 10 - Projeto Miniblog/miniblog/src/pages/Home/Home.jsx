@@ -1,11 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+// import { useNavigate, Link } from 'react-router-dom';
+import PostDetail from '../../components/PostDetail/PostDetail';
 
-import styles from './Home.module.css'
+import { useFetchDocuments } from '../../hooks/useFetchDocuments';
+
+import styles from './Home.module.css';
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  const [query, setQuery] = useState();
 
-export default Home
+  const { documents: posts, loading } = useFetchDocuments('posts');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  return (
+    <section className={styles.home}>
+      <h1>Veja nossos posts mais recentes</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type='text'
+          placeholder='Ou busque por tags...'
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </form>
+      <div>
+        {loading && <p>Carregando ...</p>}
+        {posts && posts.map((post) => <PostDetail post={post} key={post.id} />)}
+        {posts && posts.length === 0 && (
+          <div className={styles.noposts}>
+            <h2>Posts ...</h2>
+            <p>Não foram encontrados posts</p>
+            <Link to='posts/create' className='btn btn-outline'>
+              Criar primeiro post
+            </Link>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default Home;

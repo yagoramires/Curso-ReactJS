@@ -1,15 +1,10 @@
 import React, { useState } from 'react';
-import { useEffect } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 import { useAuthValue } from '../../context/AuthContext';
 import { useInsertDocument } from '../../hooks/useInsertDocument';
 
 import styles from './CreatePost.module.css';
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-};
 
 const CreatePost = () => {
   const [title, setTitle] = useState('');
