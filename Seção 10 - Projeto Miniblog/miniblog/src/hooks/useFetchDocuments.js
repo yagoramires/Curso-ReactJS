@@ -34,7 +34,6 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
             where('tagsArray', 'array-contains', search),
             orderBy('createdAt', 'desc')
           );
-          // } else if (search) {
         } else {
           q = await query(collectionRef, orderBy('createdAt', 'desc'));
         }

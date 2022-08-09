@@ -1,0 +1,38 @@
+.post {
+  margin-top: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+.post h1,
+.post h3,
+.post > p,
+.post div {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.post img {
+  width: 600px;
+}
+
+.post div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.post p {
+  font-style: italic;
+}
+
+.post > div > p > span {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
