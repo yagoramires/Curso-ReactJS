@@ -12,6 +12,7 @@ const Post = () => {
       {loading && <p>Carregando detalhes do post...</p>}
       {post && (
         <>
+            <span>Por <span>{post.createdBy}</span></span>
           <img src={post.image} alt={post.title} />
           <h1>{post.title}</h1>
           <p>{post.body}</p>
