@@ -1,1 +1,49 @@
-.postDetail {}
+.postDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 1rem;
+}
+
+.postDetail h2 {
+  font-size: 1.8rem;
+}
+
+.postDetail > p {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.image {
+  width: 600px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+
+  font-style: italic;
+
+  text-align: center;
+  width: 100%;
+}
+.tags span {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .postDetail {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
