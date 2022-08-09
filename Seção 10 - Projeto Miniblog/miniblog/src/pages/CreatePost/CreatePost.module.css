@@ -1,19 +1,14 @@
 .createPost {
-    text-align: center;
-    min-height: 85vh;
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+  text-align: center;
+  min-height: 85vh;
 }
 
 .createPost h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 .createPost p {
-    color: #aaa;
-    margin-bottom: 2rem;
+  color: #aaa;
+  margin-bottom: 2rem;
 }

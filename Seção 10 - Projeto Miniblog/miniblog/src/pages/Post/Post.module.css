@@ -1,5 +1,4 @@
 .post {
-  margin-top: 2rem;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -42,8 +41,6 @@
 }
 
 .post > span {
-  margin-top: 3rem;
-
   text-align: right;
   width: 600px;
   font-style: italic;
@@ -57,12 +54,11 @@
 
 @media (max-width: 768px) {
   .post {
+    margin: 0 auto;
     max-width: 90%;
-    margin: 2rem auto 0;
   }
 
   .post > span {
-
-    width: 100%
+    width: 100%;
   }
 }

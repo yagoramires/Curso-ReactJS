@@ -101,15 +101,6 @@ textarea {
   background: #dc3545;
 }
 
-.btn-logout {
-  padding: 0.4rem;
-
-  color: #fff;
-  border: 1px solid #fff;
-  background-color: transparent;
-
-}
-
 .btn-logout:hover {
   padding: 0.4rem;
 

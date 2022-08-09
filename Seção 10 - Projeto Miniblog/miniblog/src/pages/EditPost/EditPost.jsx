@@ -65,7 +65,7 @@ const EditPost = () => {
       tagsArray,
       uid: user.uid,
       createdBy: user.displayName,
-    }
+    };
 
     updateDocument(id, data);
 
@@ -90,11 +90,11 @@ const EditPost = () => {
                 value={title}
                 placeholder='Pense em um título'
                 required
-                />
+              />
             </label>
             <label className={styles.image}>
-                <span>Preview:</span>
-              <img src={post.image} alt={post.title}/>
+              <span>Preview:</span>
+              <img src={post.image} alt={post.title} />
             </label>
             <label>
               <span>URL da imagem:</span>

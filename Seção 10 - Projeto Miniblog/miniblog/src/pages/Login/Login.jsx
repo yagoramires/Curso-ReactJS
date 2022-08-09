@@ -19,9 +19,8 @@ const Login = () => {
       password,
     };
 
+    // eslint-disable-next-line no-unused-vars
     const res = await login(user);
-
-    console.log(res);
   };
 
   useEffect(() => {
@@ -63,7 +62,12 @@ const Login = () => {
           </button>
         )}
         {loading && (
-          <button type='submit' value='Registrar' className='btn' disabled>
+          <button
+            type='submit'
+            value='Registrar'
+            className='btn btn-dark'
+            disabled
+          >
             Aguarde ...
           </button>
         )}

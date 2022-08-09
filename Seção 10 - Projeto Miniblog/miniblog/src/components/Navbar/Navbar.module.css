@@ -4,10 +4,9 @@
   background-color: #000;
   padding: 1rem 0;
   box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.4);
-
 }
 
-.headerContainer>div {
+.headerContainer > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +15,7 @@
   margin: 0 auto;
 }
 
-.headerContainer div>a {
+.headerContainer div > a {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 500;
@@ -28,11 +27,11 @@
   font-weight: 400;
 }
 
-.headerContainer div>a>span>span {
+.headerContainer div > a > span > span {
   font-weight: 800;
 }
 
-.headerContainer>div>ul {
+.headerContainer > div > ul {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
@@ -40,16 +39,19 @@
   min-height: 100%;
 }
 
-.headerContainer>div>ul>li>a {
+.headerContainer > div > ul > li > a,
+.headerContainer > div > ul > li > span {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
   padding: 0.4rem;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
-.headerContainer>div>ul>li>a:hover {
+.headerContainer > div > ul > li > a:hover,
+.headerContainer > div > ul > li > span:hover {
   font-weight: 600;
   background-color: #fff;
   color: #000;
@@ -60,18 +62,18 @@
   color: #000 !important;
 }
 
-
 @media (max-width: 768px) {
-
-  .headerContainer>div {
-    padding: 0 .5rem;
+  .headerContainer > div {
+    padding: 0 0.5rem;
   }
 
-  .headerContainer>div>ul>li>a {
-    font-size: .6rem;
+  .headerContainer > div > ul > li > a,
+  .headerContainer > div > ul > li > span {
+    font-size: 0.6rem;
   }
 
-  .headerContainer>div>ul {
+  .headerContainer > div > ul {
     column-gap: 0.25rem;
+    align-items: flex-start;
   }
 }
