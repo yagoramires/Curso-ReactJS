@@ -1,0 +1,25 @@
+.EditPost {
+    text-align: center;
+    min-height: 85vh;
+    margin-top: 2rem;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.EditPost h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.EditPost p {
+    color: #aaa;
+    margin-bottom: 2rem;
+}
+
+.image {
+    max-width:100%;
+    margin: .5rem 0;
+}
