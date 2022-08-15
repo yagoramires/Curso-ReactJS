@@ -6,3 +6,11 @@
   width:100px;
   margin-bottom: 3rem;
 }
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}

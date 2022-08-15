@@ -3,23 +3,27 @@ import './App.css';
 import About from './pages/About';
 import Home from './pages/Home';
 
+import { ContextHookProvider } from './context/Context';
+
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-        </ul>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-        </Routes>
-      </BrowserRouter>
+      <ContextHookProvider>
+        <BrowserRouter>
+          <ul>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/about'>About</Link>
+            </li>
+          </ul>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+          </Routes>
+        </BrowserRouter>
+      </ContextHookProvider>
     </div>
   );
 }
